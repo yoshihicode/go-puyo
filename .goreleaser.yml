@@ -25,3 +25,17 @@ archives:
   - name_template: "{{ .ProjectName }}_{{ .Os }}_{{ .Arch }}"
 release:
   prerelease: auto
+brews:
+  - name: go-puyo
+    repository:
+      owner: yoshihicode
+      name: homebrew-tap
+    directory: Formula
+    homepage: "https://github.com/yoshihicode/go-puyo"
+    description: "go-puyo controls cube instead of Kubernetes clusters."
+    license: "MIT"
+    test: |
+      system "#{bin}/go-puyo --help"
+    install: |
+      bin.install "go-puyo"
+

@@ -11,29 +11,32 @@ Go-Puyo is terminal based 'Puyo Puyo' similar game written in Go language.
 ## What is puyo puyo?
 https://en.wikipedia.org/wiki/Puyo_Puyo
 
-## How to get and run the code.
+## 💾 Download
+👉 [Get the latest binaries](https://github.com/yoshihicode/go-puyo/releases/latest)
 
-### 1st step
-Get the code.
 
+## 🚀 Quick start
+### 🐧 Linux
+```bash
+wget https://github.com/yoshihicode/go-puyo/releases/latest/download/go-puyo_linux_amd64.tar.gz
+tar -xzvf go-puyo_linux_amd64.tar.gz
+sudo mv go-puyo /usr/local/bin/
+go-puyo
 ```
-go get -d github.com/yoshihicode/go-puyo
+### 🍎🍺  macOS / Homebrew
+```bash
+brew tap yoshihicode/tap
+brew install go-puyo
 ```
-### 2nd step
-Change directory to the source code directory.
-
-```
-cd $GOPATH/src/github.com/yoshihicode/go-puyo
-```
-### 3rd step
-Run the code.
-
-```
-go run main.go
+### 🪟 Windows
+```powershell
+Invoke-WebRequest -OutFile go-puyo_windows_amd64.tar.gz https://github.com/yoshihicode/go-puyo/releases/latest/download/go-puyo_windows_amd64.tar.gz
+tar -xzvf go-puyo_windows_amd64.tar.gz
+.\go-puyo.exe
 ```
 
 ## How to play
-Key bindings<br>
+🕹️Key bindings<br>
 [enter] - start game<br>
 [esc] - exit<br>
 [space] - drop<br>
@@ -43,5 +46,11 @@ Key bindings<br>
 [s/arrow down] - rotate right<br>
 [p] - pause/resume<br>
 
-## Win/Mac/Linux binary
-https://github.com/yoshihicode/go-puyo/releases
+## 🛠️ Build from source
+
+```bash
+git clone https://github.com/yoshihicode/go-puyo.git
+cd go-puyo
+go build -o go-puyo
+./go-puyo
+```

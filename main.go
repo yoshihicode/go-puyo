@@ -1,6 +1,8 @@
 package main
 
 import (
+	"flag"
+	"fmt"
 	"math/rand"
 	"runtime"
 	"strconv"
@@ -358,6 +360,21 @@ func b2i(b bool) int {
 }
 
 func main() {
+	flag.Usage = func() {
+		fmt.Fprintf(flag.CommandLine.Output(), "Usage of go-puyo:\n")
+		fmt.Fprintf(flag.CommandLine.Output(), "  go-puyo [options]\n\n")
+		fmt.Fprintf(flag.CommandLine.Output(), "Options:\n")
+		fmt.Fprintf(flag.CommandLine.Output(), "  -h, --help\tprint this message\n\n")
+		fmt.Fprintf(flag.CommandLine.Output(), "Controls:\n")
+		fmt.Fprintf(flag.CommandLine.Output(), "  a/Arrow Left : Move Left\n")
+		fmt.Fprintf(flag.CommandLine.Output(), "  d/Arrow Right: Move Right\n")
+		fmt.Fprintf(flag.CommandLine.Output(), "  w/Arrow Up   : Rotate Left\n")
+		fmt.Fprintf(flag.CommandLine.Output(), "  s/Arrow Down : Rotate Right\n")
+		fmt.Fprintf(flag.CommandLine.Output(), "  Space        : Drop\n")
+		fmt.Fprintf(flag.CommandLine.Output(), "  p            : Pause/Resume\n\n")
+		flag.PrintDefaults()
+	}
+	flag.Parse()
 
 	err := termbox.Init()
 	if err != nil {
