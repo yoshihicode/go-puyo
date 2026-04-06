@@ -32,7 +32,7 @@ brews:
       name: homebrew-tap
     directory: Formula
     homepage: "https://github.com/yoshihicode/go-puyo"
-    description: "go-puyo controls cube instead of Kubernetes clusters."
+    description: "Go-Puyo is terminal based 'Puyo Puyo' similar game written in Go language."
     license: "MIT"
     test: |
       system "#{bin}/go-puyo --help"
