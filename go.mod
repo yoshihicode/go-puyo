@@ -1,6 +1,6 @@
 module github.com/y-hatano-github/go-puyo
 
-go 1.22.2
+go 1.25
 
 require github.com/nsf/termbox-go v1.1.1
 

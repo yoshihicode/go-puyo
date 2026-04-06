@@ -4,24 +4,26 @@ Go-Puyo is terminal based 'Puyo Puyo' similar game written in Go language.
 
 ![gopuyo](gopuyo.gif)
 
+[![Release](https://img.shields.io/github/v/release/yoshihicode/go-puyo)](https://github.com/yoshihicode/go-puyo/releases/latest)
+![Go Version](https://img.shields.io/github/go-mod/go-version/yoshihicode/go-puyo)
+![License](https://img.shields.io/github/license/yoshihicode/go-puyo)
+
 ## What is puyo puyo?
 https://en.wikipedia.org/wiki/Puyo_Puyo
 
 ## How to get and run the code.
-### build version
-go1.22.2 
- 
+
 ### 1st step
 Get the code.
 
 ```
-go get -d github.com/y-hatano-github/go-puyo
+go get -d github.com/yoshihicode/go-puyo
 ```
 ### 2nd step
 Change directory to the source code directory.
 
 ```
-cd $GOPATH/src/github.com/y-hatano-github/go-puyo
+cd $GOPATH/src/github.com/yoshihicode/go-puyo
 ```
 ### 3rd step
 Run the code.
@@ -42,4 +44,4 @@ Key bindings<br>
 [p] - pause/resume<br>
 
 ## Win/Mac/Linux binary
-https://github.com/y-hatano-github/go-puyo/releases
+https://github.com/yoshihicode/go-puyo/releases
