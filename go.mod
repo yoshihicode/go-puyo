@@ -1,4 +1,4 @@
-module github.com/y-hatano-github/go-puyo
+module github.com/yoshihicode/go-puyo
 
 go 1.25
 
